@@ -2,7 +2,7 @@
 
 ## Global Requirements
 
-- All deliverables shall be added, committed, and pushed to your `Week6` folder in your repository.
+- Add, commit, and push all deliverables to your `Week06` folder in your repository.
 - Include your name and the names of anyone who assisted you in the following format:
 
       % Student: Firstname Lastname
@@ -16,7 +16,7 @@
 
 - Provide comments explaining each part of your code.
 - Use advanced function features such as optional parameters, subfunctions, and proper error handling.
-- Make use of advanced plotting techniques to visualize data effectively.
+- Use advanced plotting techniques to visualize data effectively.
 - Ensure your programs handle input and output properly, and test them with different scenarios.
 
 ---
@@ -114,7 +114,7 @@ Provide sample stress-strain data files with columns `Strain` and `Stress`. Exam
 
 - Submit the function `fitStressStrainCurve.m`.
 - Submit the script `stressStrainAnalyzer.m`.
-- Include sample data files in your `Week6` folder.
+- Include sample data files in your `Week06` folder.
 - Ensure your code is well-commented and uses advanced function features.
 
 ---
@@ -152,7 +152,7 @@ Develop a MATLAB function and script that analyze inventory usage logs and predi
     - Ensure the function works for multiple UPCs by allowing the user to select which ingredient to analyze.
     - **Note:** You will need to either convert the upc values in the table to string, use `fprintf`, or some other formatting method to avoid the scientific notation
 
-### Script: `testInventoryForecast`
+### Script: `runInventoryForecast.m`
 
 **Requirements**:
 
@@ -236,12 +236,12 @@ The plot would display two datasets.
 * Test the function with different UPCs to ensure that it correctly plots historical inventory levels and predicts future inventory changes.
 * Test with different values for `futureDays` to ensure the forecast adapts correctly.
 * Verify that the plot provides a clear, visual representation of the inventory and forecast.
-* `testInventoryForecast.m` tests the `inventoryForecast()` function
+* `runInventoryForecast.m` tests the `inventoryForecast()` function
 
 ### Deliverables
 
 * Submit the function `inventoryForecast.m`.
-* Submit the script `testInventoryForecast.m`.
+* Submit the script `runInventoryForecast.m`.
 * Include the sample data files `Inventory.csv` and `UsageLog.csv` in your submission folder.
 * Ensure that your code is well-commented and uses advanced function features, such as error handling, plotting, and user inputs.
 
@@ -293,7 +293,7 @@ Simulate the projectile motion of an object launched with a given initial veloci
 
 ### Script: `runProjectileMotion.m`
 
-Create a matlab script that prompts the user for input and runs the `projectileMotionWithKeyPoints()` function with their inputs.
+Create a MATLAB script that prompts the user for input and runs the `projectileMotionWithKeyPoints()` function with their inputs.
 
 **Requirements**:
 
@@ -323,28 +323,19 @@ Enter gravitational acceleration (m/s^2): 9.81
 - Submit a script `runProjectileMotion.m` that prompts the user for input and calls `projectileMotionWithKeyPoints`.
 - Ensure your code is well-commented and uses proper error handling.
 
-### Definition of Done
-
-Your `Week6` folder shall contain at minimum the following files:
-
-* `projectileMotionWithKeyPoints.m`: The function that simulates the projectile motion and plots the results.
-* `testProjectileMotion.m`: The script that prompts the user for input and calls the function.
-* Any other scripts or functions you created or modified.
-
-
 ---
 
 ## Definition of Done
 
-Your `Week6` folder shall contain at minimum the following files:
+Your `Week06` folder shall contain at minimum the following files:
 
-* `fitStressStrainCurve.m`
-* `Inventory.csv`
-* `inventoryForecast.m`
-* `projectileMotionWithKeyPoints.m`
-* `runInventoryForecast.m`
-* `runProjectileMotion.m`
-* `stressStrainAnalyzer.m`
-* `UsageLog.csv`
-* Any other functions or scripts you created or modified
-
+* Week06/
+  * `fitStressStrainCurve.m`
+  * `Inventory.csv`
+  * `inventoryForecast.m`
+  * `projectileMotionWithKeyPoints.m`
+  * `runInventoryForecast.m`
+  * `runProjectileMotion.m`
+  * `stressStrainAnalyzer.m`
+  * `UsageLog.csv`
+  * Any other functions or scripts you created or modified

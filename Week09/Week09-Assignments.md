@@ -1,8 +1,8 @@
-# Week 8 Homework Assignments: MATLAB App Designer and Symbolic Math
+# Week 9 Homework Assignments: MATLAB App Designer and Symbolic Math
 
 ## Global Requirements
 
-* All deliverables shall be added, committed, and pushed to your Week9 folder in your repository.
+* Add, commit, and push all deliverables to your `Week09` folder in your repository.
 * Include your name and the names of anyone who assisted you in the following format:
 
 ```matlab
@@ -51,8 +51,8 @@ and see the corresponding plot displayed on the axes.
 
 ### Deliverables
 
-	1.	Submit the .mlapp file for your app (e.g., FunctionPlotter.mlapp).
-	2.	Include comments explaining each part of your code and UI components.
+1. Submit the `.mlapp` file for your app (e.g., `FunctionPlotter.mlapp`).
+2. Include comments explaining each part of your code and UI components.
 
 ## 2: Symbolic Differentiation and Integration App
 
@@ -94,7 +94,7 @@ differentiate or integrate the expression symbolically.
 The app should allow a user to input `x^2 + 2*x + 1`, choose “Differentiate”, and display the result `2*x + 2`. The plot
 should show both the original function and its derivative.
 
-Deliverables
+### Deliverables
 
 1. Submit the `.mlapp` file for your app (e.g., `SymbolicDiffIntApp.mlapp`).
 2. Include comments explaining each part of your code and UI components.

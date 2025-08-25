@@ -2,13 +2,13 @@
 
 ## Global Requirements
 
-* All deliverables shall be added, committed, and pushed to your `Week02` folder in your repository.
-* At the **top** of each `.m` file, please include:
-   ```matlab
+- Add, commit, and push all deliverables to your `Week02` folder in your repository.
+- At the top of each `.m` file, include:
+  ```matlab
   % Student: Firstname Lastname
-  % Assisted by: first person, second person, etc.
+  % Assisted by: First Person, Second Person, etc.
   clc; clear;
-   ```
+  ```
 
 ---
 
@@ -23,7 +23,7 @@ Write a MATLAB script that performs basic matrix and vector arithmetic.
 **Objectives**:
 
 - Practice element-wise operations, matrix addition, subtraction, and scalar multiplication.
-- Use either `disp` or `fprintf` to show your results
+- Use `disp` or `fprintf` to show results clearly.
 
 **Steps**:
 
@@ -38,15 +38,15 @@ Write a MATLAB script that performs basic matrix and vector arithmetic.
      ```
 
 2. **Matrix Addition**:
-   - Add matrices `A` and `B` and store the result in a new matrix `C`.
-   - Display `C` with a clear label (e.g., `disp('Matrix C:')`, `disp(C)` or use `fprintf`).
+   - Add `A` and `B` and store the result in `C`.
+   - Display `C` with a clear label (e.g., `disp('Matrix C:'); disp(C)` or use `fprintf`).
 
 3. **Matrix Subtraction**:
    - Subtract `B` from `A` and store the result in a new matrix `D`.
    - Display `D`
 
 4. **Element-wise Multiplication**:
-   - Multiply `A` and `B` element by element (use the `.*`) and store the result in `E`.
+   - Multiply `A` and `B` element by element (use `.*`) and store the result in `E`.
    - Display `E`
 
 5. **Matrix Scalar Multiplication**:
@@ -57,11 +57,11 @@ Write a MATLAB script that performs basic matrix and vector arithmetic.
 
 1. `matrixOperations.m` containing all of the above steps.
 2. Include comments explaining what each part of the code does.
-3. Use `disp` or `fprintf` to **clearly** present each result (Do not use unsuppressed MATLAB output)
+3. Use `disp` or `fprintf` to clearly present each result (do not rely on unsuppressed MATLAB output).
 
 ---
 
-## 2: Vector Arithmetic
+## 2. Vector Arithmetic
 
 ### Instructions
 
@@ -78,7 +78,7 @@ Write a MATLAB script that demonstrates basic vector operations.
    - Define a column vector `y` with elements `[2; 4; 6; 8; 10]`.
 
 3. **Element-wise Multiplication**:
-   - Multiply the `x` by `y` element by element (use `.*`).
+   - Multiply `x` by `y` element by element (use `.*`).
 
 4. **Vector Transposition**:
    - Transpose the row vector `x` to a column vector and store it as `xT`.
@@ -94,7 +94,7 @@ Write a MATLAB script that demonstrates basic vector operations.
 
 ---
 
-## 3: Simple Data Visualization
+## 3. Simple Data Visualization
 
 ### Instructions
 
@@ -119,7 +119,7 @@ Write a MATLAB script that creates a basic line plot.
 
 ### Deliverables
 
-1. `simplePlot.m` which creates the plot.
+1. `simplePlot.m` that creates the plot.
 2. **Comments** explaining each part of the code.
 
 ---
@@ -128,7 +128,7 @@ Write a MATLAB script that creates a basic line plot.
 
 ### Task
 
-Create a MATLAB script that performs calculations for **stress** and **strain** and then visualizes the results
+Create a MATLAB script that performs calculations for stress and strain and then visualizes the results.
 
 ### Instructions
 
@@ -148,11 +148,11 @@ Create a MATLAB script that performs calculations for **stress** and **strain** 
    - Define a scalar `originalLength = 100;` (in mm).
 
 2. **Stress Calculation**:
-   - Calculate the stress using the formula $$ \text{stress} = \frac{\text{force}}{\text{crossSectionArea}} $$ for each force value.
+   - Calculate stress using: $$ \text{stress} = \frac{\text{force}}{\text{crossSectionArea}} $$ for each force value.
    - Store the results in `stress`. Use element-wise calculations where needed.
 
 3. **Strain Calculation**:
-   - Calculate the strain using $$ \text{strain} = \frac{\text{displacement}}{\text{originalLength}} $$ for each displacement value.
+   - Calculate strain using: $$ \text{strain} = \frac{\text{displacement}}{\text{originalLength}} $$ for each displacement value.
    - Store the results in `strain`. Use element-wise calculations where needed.
 
 4. **Plot the Stress-Strain Curve**:
@@ -189,7 +189,7 @@ Simulate the vertical motion of a projectile under gravity, and visualize the re
    - Create a time vector `time = 0:0.1:10;` (representing 0 to 10 seconds).
 
 2. **Height Calculation**:
-   - Calculate the height of the projectile at each time point using $$ y = \text{initialVelocity} \times \text{time} - \frac{1}{2} \times \text{gravity} \times \text{time}^2 $$
+   - Calculate the height at each time point using: $$ y = \text{initialVelocity} \cdot \text{time} - \frac{1}{2} \cdot \text{gravity} \cdot \text{time}^2 $$
    - Store the results in a vector `height`.
 
 3. **Plotting the Trajectory**:
@@ -218,7 +218,7 @@ Identify and fix errors in a MATLAB script that calculates the total cost of ite
    - Pay attention to how arrays and variables are used and manipulated.
 4. Use comments to explain each fix you make and describe the original error.
 
-#### Example Buggy Script (buggyScript2.m)
+#### Example Buggy Script (`buggyScript2.m`)
 
 ```matlab
 % Task: Calculate the total cost of items in a grocery list
@@ -235,7 +235,7 @@ fprintf('The total cost of the grocery items is: %.2f\n', sum(totalCost));
 
 ### Deliverables
 
-1. Submit the corrected script file (`fixedScript2.m`).
+1. Submit the corrected script file `fixedScript2.m`.
    * Ensure that all calculations and logic work as intended.
    * Include comments explaining each error you found and how you fixed it.
 2. Write a short report (`debuggingReport2.txt`) containing the following:
@@ -247,14 +247,15 @@ fprintf('The total cost of the grocery items is: %.2f\n', sum(totalCost));
 
 ## Definition of Done
 
-1. You shall have a GitHub Repository set up with gberl001 invited as a collaborator.
-2. Your `Week02` Folder shall have the following files:
-
-   * matrixOperations.m
-   * vectorOperations.m
-   * simplePlot.m
-   * materialProperties.m
-   * projectileMotion.m
-   * buggyScript2.m
+- You have a GitHub repository with `gberl001` invited as a collaborator.
+- Your `Week02` folder contains at minimum:
+  * `matrixOperations.m`
+  * `vectorOperations.m`
+  * `simplePlot.m`
+  * `materialProperties.m`
+  * `projectileMotion.m`
+  * `buggyScript2.m`
+  * `fixedScript2.m`
+  * `debuggingReport2.txt`
    * fixedScript2.m
    * debuggingReport2.txt

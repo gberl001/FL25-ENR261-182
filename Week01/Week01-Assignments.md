@@ -2,7 +2,7 @@
 
 ## Global Requirements
 
-* All deliverables shall be `added`, `committed`, and `pushed` to your `Week1` folder in your repository.
+- Add, commit, and push all deliverables to your `Week01` folder in your repository.
 
 ## 1. Exploring the MATLAB Interface
 
@@ -20,8 +20,7 @@ Perform a guided tour of the MATLAB interface.
 
 ### Deliverables
 
-1. Write a brief report `report.txt` (1-2 paragraphs) describing the purpose of each part of the interface and any
-   observations you made while exploring.
+1. `report.txt` (1–2 paragraphs) describing the purpose of each interface component and your observations while exploring.
 
 ---
 
@@ -33,14 +32,12 @@ Practice using basic MATLAB commands and performing simple calculations.
 
 ### Requirements
 
-- In the Command Window, try performing basic arithmetic using different variables.
-- Use commands like `clc` to clear the Command Window, `clear` to remove variables from the Workspace, and `whos` to
-  see the current variables.
+- In the Command Window, perform basic arithmetic with variables.
+- Use `clc` to clear the Command Window, `clear` to remove variables from the Workspace, and `whos` to inspect current variables.
 
 ### Deliverables
 
-1. Submit a script file (`week1_commands.m`) that includes several arithmetic operations. Include comments explaining
-   what each command does. Additionally, answer the following questions:
+1. `week1_commands.m` with several arithmetic operations. Include comments explaining what each command does. Additionally, answer:
     - What does `clc` do?
     - What happens when you use `clear`?
     - What does `whos` display?
@@ -54,26 +51,23 @@ Practice using basic MATLAB commands and performing simple calculations.
 Learn to use MATLAB’s help system to find information on specific commands and functions.
 
 ### Requirements
-* Use the `help` command or MATLAB documentation to research the following three MATLAB functions: `fprintf`, `plot`,
-  and `disp`.
-* For each function:
-    * Write a brief summary of what it does.
-    * Provide an example of how to use it, including comments explaining your understanding.
-    * Experiment with the function in MATLAB by creating a simple example (e.g., use `fprintf` to format and display a
-      message, use `plot` to create a basic graph, use `disp` to display text, variables, or a combo).
+
+- Use the `help` command or MATLAB documentation to research: `fprintf`, `plot`, and `disp`.
+- For each function:
+  - Write a brief summary of what it does.
+  - Provide an example of how to use it, with comments.
+  - Experiment with a simple example (e.g., use `fprintf` to format and display a message; `plot` for a basic graph; `disp` to display text/variables).
 
 #### Tips for Exploration
 
-* Use the command `help disp` in the Command Window to learn about the `disp` function.
-* Think about how you might want to display information or variables to the user. `disp` is often used for simple output
-  without formatting.
-* For more complex outputs, you might explore how `fprintf` differs from `disp`.
+- Use `help disp` to learn about the `disp` function.
+- `disp` is convenient for simple output without formatting.
+- For formatted outputs (combining text and numbers), use `fprintf`.
 
 ### Deliverables
 
-1. Submit a report (`functions_exploration.txt`) with a summary and example for each
-   function (`fprintf`, `plot`, `disp`).
-1. Include a simple MATLAB script (`functions_exploration.m`) that demonstrates your examples.
+1. `functions_exploration.txt` with a summary and example for each function (`fprintf`, `plot`, `disp`).
+2. `functions_exploration.m` demonstrating your examples.
 
 ---
 
@@ -85,14 +79,14 @@ Write a simple script to perform a basic task; calculate the area of a rectangle
 
 ### Requirements
 
-- Create a new script in the MATLAB Editor and save it as `calculate_area.m`.
-- The script should calculate the area of a rectangle using variables for length and width.
-- Print the result in a user-friendly format using `disp` or, `fprintf` to achieve the output shown in the example. 
-  - The area of a \<length\> by \<width\> rectangle is \<result\>
+- Create a new script `calculate_area.m`.
+- Compute the area of a rectangle using variables for length and width.
+- Print the result in a user-friendly format using `disp` or `fprintf` to match the example format:
+  - The area of a <length> by <width> rectangle is <result>
 
 ### Tips
-  - You will need to read the `help` on `disp` to learn how to display text and numbers together.
-  - In order to print numbers and text (strings), you need to convert numbers to a string
+- Use `fprintf` for mixed text and numbers, or read `help disp` to see options for displaying values.
+- To print numbers alongside text, format them (e.g., with `fprintf`).
 
 ### Example Output
 
@@ -102,8 +96,7 @@ The area of a 5 by 10 rectangle is 50
 
 ### Deliverables
 
-1. Submit the script file (`calculate_area.m`). Include comments explaining each line of your code. Test the script with
-   different values for length and width, and note the results.
+1. `calculate_area.m` with comments explaining each line. Test with different values for length and width and note the results in comments.
 
 ---
 
@@ -115,10 +108,9 @@ Practice debugging by identifying and fixing errors in a MATLAB script.
 
 ### Instructions
 
-1. Copy the provided buggy MATLAB code to a script file named `buggy_script.m`.
-1. Open the script in the MATLAB Editor and try running it. Observe the errors or unexpected behaviors.
-1. Identify the bugs in the script and fix them. The bugs could be syntax errors, logical errors, or runtime errors. Use
-   comments to explain each fix you make.
+1. Copy the provided buggy MATLAB code to `buggy_script.m`.
+2. Run it and observe any errors or unexpected behaviors.
+3. Identify and fix the bugs (syntax, logic, or runtime). Use comments to explain each fix you make.
 
 #### Example Buggy Script (buggy_script.m)
 
@@ -132,22 +124,23 @@ disp('The area of the circle is: ', area) % Incorrect use of disp function
 
 ### Deliverables
 
-* Submit the corrected script file (`fixed_script.m`). Include comments explaining the errors you found and how you fixed them.
-* Write a short report (`debugging_report.txt`) containing the following
-  * Summarize the errors you encountered.
-  * Explain how you found the solution to fix them.
-  * Explain what you learned from the debugging process.
+- `fixed_script.m` with comments explaining the errors you found and how you fixed them.
+- `debugging_report.txt` including:
+  - A summary of the errors encountered.
+  - How you diagnosed and fixed them.
+  - What you learned from the debugging process.
 
 ---
 
 # Definition of Done
-1. You shall have a Github Repository set up with `gberl001` invited as a collaborator.
-2. Your Week1 Folder shall have the following files
-   * buggy_script.m
-   * calculate_area.m
-   * debugging_report.txt
-   * fixed_script.m
-   * functions_exploration.m
-   * functions_exploration.txt
-   * Report.txt
-   * week1_commands.m
+- You have a GitHub repository with `gberl001` invited as a collaborator.
+- Your `Week01` folder contains at minimum:
+
+  - `buggy_script.m`
+  - `calculate_area.m`
+  - `debugging_report.txt`
+  - `fixed_script.m`
+  - `functions_exploration.m`
+  - `functions_exploration.txt`
+  - `report.txt`
+  - `week1_commands.m`

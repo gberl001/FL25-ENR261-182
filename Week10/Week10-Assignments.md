@@ -101,44 +101,45 @@ requirements.
 
 ## Assignment 3: Custom Algorithm Comparison
 
-### Objective:
+### Objective
 
-Select an algorithm or a set of algorithms, and develop a graphical application using MATLAB App Designer to perform comparative analysis. You may choose to:
+Build a small App Designer tool that compares algorithm behavior. Choose ONE of the comparison modes below and present results clearly.
 
-1. Run a single algorithm on multiple datasets or with varying parameters, OR
-2. Run multiple algorithms on the same dataset or with the same parameters.
+- Mode A — Same algorithm, different inputs/parameters: Run one algorithm against the same dataset while varying inputs, hyperparameters, or noise. Examples: random walk with different step distributions, k-means with different `k` or initializations.
+- Mode B — Different algorithms, same input: Run two algorithms side-by-side on the same dataset or task. Examples: merge sort vs. bubble sort, MATLAB `sort` vs. your bubble sort, looped implementation vs. vectorized implementation.
 
-The goal is to demonstrate an understanding of how algorithmic behavior changes with different inputs or configurations and to present results in a clear, comparative format.
+Implementation expectations: Implement at least one algorithm yourself in MATLAB. If one of your comparisons uses a built‑in (e.g., MATLAB `sort`), you may implement only the other algorithm (e.g., bubble sort) and compare them fairly on the same input.
 
-### Requirements:
+### Requirements
 
-1. **Graphical Interface**:
-    * Allow input of all necessary parameters for the chosen algorithm.
-    * Button to **run the simulation**.
-    * Plot that shows the output of the algorithm over time or as appropriate.
-    * Ability to **show the last two runs**:
-        * The most recent run should be plotted with solid lines.
-        * Example: The previous run can be plotted with dashed lines however, you may choose a different method if you
-          feel it offers a better user experience.
+1. **Graphical Interface**
+    - Input fields for parameters and/or dataset selection (as appropriate for your choice).
+    - Button to run the comparison.
+    - Plots and/or metrics clearly showing results.
+    - Show the last two runs for quick visual comparison (e.g., solid vs dashed, or different colors).
 
-2. **Functionality**:
-    * Choose any algorithm you are interested in that involves tuning parameters and observing performance.
-    * Implement the algorithm and provide functionality to easily compare different runs.
-    * The application should handle different inputs and visualize how changes affect the system response.
+2. **Functionality**
+    - Implement at least one algorithm yourself unless both are MATLAB built‑ins and you are comparing inputs/parameters (Mode A).
+    - Use a consistent dataset across comparisons (Mode B) or a consistent algorithm with varying inputs (Mode A).
+    - Report relevant metrics. Suggested options (pick what fits your task):
+        - Runtime (`tic/toc`) or operation counts
+        - Accuracy, error, or convergence (e.g., residuals, number of iterations)
+        - Stability/overshoot/settling time (for control problems like PID)
+    - Make it easy to re‑run with the same settings (e.g., an optional random seed field).
 
-3. **Submission**:
-    * Submit your MATLAB `.mlapp` file along with a short write-up (1-2 paragraphs) that explains:
-        * The chosen algorithm and why you selected it.
-        * How your app is designed, and how to use it.
-        * Observations and insights from comparing different runs.
-        * Screenshots of the application and plots (These can just be image files in the folder).
+3. **Submission**
+    - Submit your `.mlapp` and a short write‑up (1–2 paragraphs) including:
+        - Which mode you chose (A or B) and why.
+        - What you implemented vs. what (if anything) you used from MATLAB built‑ins.
+        - A summary of your findings with at least one figure or table (screenshots are fine).
 
-### Tips:
+### Examples (choose or adapt)
 
-* For comparing algorithms, you might choose different sorting, searching, or optimization techniques and evaluate their efficiency or accuracy.
-  * If you choose this, you may need very large sets of data to achieve a noticeable difference so plan accordingly.
-* For comparing datasets or parameters, you could adjust input data distributions, noise levels, or control settings.
-* Consider what insights you’d like to gain from the comparison and design your app accordingly.
+- Sorting: Bubble sort (implemented) vs MATLAB `sort` on random arrays; vary `N`, measure runtime.
+- Control: PID on the same plant with different gains; measure overshoot, rise time, steady‑state error.
+- Clustering: k‑means with different `k` or seeds; compare inertia or cluster consistency.
+- Simulation: Random walk with different step distributions; compare variance growth.
+- Vectorization: For‑loop implementation vs vectorized equivalent; measure runtime and discuss readability/maintainability trade‑offs.
 
 ---
 

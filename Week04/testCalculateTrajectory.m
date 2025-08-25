@@ -6,7 +6,7 @@ function testCalculateTrajectory()
     y0 = 10;
     numValues = 100;
     
-    [x, y, time] = calculateTrajectory(v0, angle, g, y0, numValues);
+    [x, y, time] = calculateTrajectory(v0, angle, y0, g, numValues);
     
     % Test that the time values are non-negative and increase monotonically
     assert(all(time >= 0), 'Error: Time values should be non-negative');

@@ -2,7 +2,7 @@
 
 ## Global Requirements
 
-* All deliverables shall be added, committed, and pushed to your `Week5` folder in your repository.
+* Add, commit, and push all deliverables to your `Week05` folder in your repository.
 * Include your name and the names of anyone who assisted you in the following format at the top of each `.m` file:
   ```matlab
   % Student: Firstname Lastname
@@ -48,7 +48,7 @@ CarbonFiber,1600,3500,20
 Plastic,950,50,0.5
 ```
 
-### Function: filterMaterials
+### Function: `filterMaterials`
 
 **Requirements**:
 
@@ -111,7 +111,7 @@ Materials that meet your criteria:
 
 * Submit the function `filterMaterials.m`.
 * Submit the script `materialSelector.m`.
-* Include the `material_properties.csv` file in your `Week5` folder.
+* Include the `material_properties.csv` file in your `Week05` folder.
 * Ensure your code is well-commented and uses logical vectors for filtering.
 
 ## 2. Smart Inventory Alert System
@@ -154,7 +154,7 @@ Functionality:
 
 * When the user selects option 4:
   * Prompt the user to enter the low-stock threshold.
-  * Call getLowStockItems with the user-specified threshold.
+  * Call `getLowStockItems` with the user-specified threshold.
   * Display the list of low-stock items.
   * If no items are low on stock, display an appropriate message.
 
@@ -254,7 +254,7 @@ Physicists often need to analyze simulation data to extract meaningful insights.
 1. **Data Generation**:
    * Generate a set of projectile ranges for angles from 0 to 90 degrees using last week’s `calculateTrajectory()` function.
 2. **Data Analysis**:
-   * Use analyzeTrajectories to analyze the data. .
+   * Use `analyzeTrajectories` to analyze the data.
 3. **Output**:
    * Display the average range, maximum range, and optimal angle in the command window.
    * Display the angles that resulted in above-average ranges.
@@ -290,8 +290,8 @@ Angles resulting in above-average ranges:
 
 ### Deliverables
 
-1. Submit the function analyzeTrajectories.m.
-2. Submit the script trajectoryAnalysis.m.
+1. Submit the function `analyzeTrajectories.m`.
+2. Submit the script `trajectoryAnalysis.m`.
 3. Include any necessary functions from last week, if modified.
 4. Ensure your code is well-commented and uses logical vectors for analysis.
 
@@ -299,16 +299,17 @@ Angles resulting in above-average ranges:
 
 ## Definition of Done
 
-Your `Week5` folder shall contain at minimum the following files:
+Your `Week05` folder shall contain at minimum the following files:
 
-* analyzeTrajectories.m
-* filterMaterials.m
-* getLowStockItems.m
-* kitchenInventory.m (updated)
-* materialSelector.m
-* material_properties.csv
-* trajectoryAnalysis.m
-* Any other functions or scripts you created or modified
+* Week05/
+  * analyzeTrajectories.m
+  * filterMaterials.m
+  * getLowStockItems.m
+  * kitchenInventory.m (updated)
+  * materialSelector.m
+  * material_properties.csv
+  * trajectoryAnalysis.m
+  * Any other functions or scripts you created or modified
 
 ## Additional Instructions and Tips
 

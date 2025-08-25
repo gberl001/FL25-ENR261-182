@@ -1,14 +1,14 @@
-# Week 7 Homework Assignments: Advanced Data Types - Structures, Cell Arrays, and Tables
+# Week 7 Homework Assignments: Advanced Data Types — Structures, Cell Arrays, and Tables
 
 ## Global Requirements
 
-- All deliverables shall be added, committed, and pushed to your `Week7` folder in your repository.
+- Add, commit, and push all deliverables to your `Week07` folder in your repository.
 - Include your name and the names of anyone who assisted you in the following format:
 
       % Student: Firstname Lastname
       % Assisted by: Firstname Lastname, etc.
 
-- Ensure your **scripts** (**Not functions**) include the following to clear the workspace and command window:
+- Ensure your scripts (not functions) include the following to clear the workspace and command window:
 
       clc;
       clear;
@@ -23,7 +23,7 @@
 
 ---
 
-## 1: Component Database Management
+## 1. Component Database Management
 
 ### Task
 
@@ -111,7 +111,7 @@ You can test your functionality running the following test files:
 
 ---
 
-## 2: Recipe Manager
+## 2. Recipe Manager
 
 ### Task
 
@@ -201,7 +201,7 @@ You can test your functionality running the following test files:
 
 ---
 
-## 3: Particle Simulation Data Analysis
+## 3. Particle Simulation Data Analysis
 
 ### Task
 
@@ -296,16 +296,17 @@ You can test your functionality running the following test files:
 
 ## Definition of Done
 
-Your `Week7` folder shall contain **at minimum** the following files:
+Your `Week07` folder shall contain **at minimum** the following files:
 
-- `addComponent.m`
-- `componentDatabase.m`
-- `struct2Table.m`
-- `updateInventory.m`
-- `recipeManager.m`
-- `simulateParticleMotion.m`
-- `calculateAverageVelocity.m`
-- `particleSimulation.m`
+* Week07/
+  - `addComponent.m`
+  - `componentDatabase.m`
+  - `struct2Table.m`
+  - `updateInventory.m`
+  - `recipeManager.m`
+  - `simulateParticleMotion.m`
+  - `calculateAverageVelocity.m`
+  - `particleSimulation.m`
 
 Ensure that each script and function is well-documented and follows good coding practices.
 

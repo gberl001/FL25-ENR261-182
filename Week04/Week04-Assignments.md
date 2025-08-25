@@ -2,19 +2,19 @@
 
 ## Global Requirements
 
-* All deliverables shall be added, committed, and pushed to your `Week4` folder in your repository.
+* Add, commit, and push all deliverables to your `Week04` folder in your repository.
 * Include your name and the names of anyone who assisted you in the following format:
 
       % Student: Firstname Lastname
       % Assisted by: Firstname Lastname, etc.
-* Ensure your **scripts** (**Not functions**) include the following to clear the workspace and command window
+* Ensure your **scripts** (**Not functions**) include the following to clear the workspace and command window:
 
       clc;
       clear;
-* All CSV files will generally be created by your program, this week, the only one provided is `gear_data.csv`
-* There are tests for each assignment if, they are all functions, you may run them to confirm your functions perform as expected.
-  * Be sure the test is in the same folder as your functions
-* Outputs should resemble the examples shown however, they do not need to be exact, so long as sufficient data is there to resemble the example.
+* All CSV files will generally be created by your program. This week, the only starter file provided is `gear_data.csv`.
+* There are tests for each assignment. If they are all functions, you may run them to confirm your functions perform as expected.
+  * Ensure the test files are in the same folder as your functions.
+* Outputs should resemble the examples shown; they do not need to be exact as long as sufficient information is presented.
 
 ---
 
@@ -28,16 +28,15 @@ comparing a user’s guessed optimal launch angle with the computed optimal angl
 
 ### Function 1: `calculateTrajectory`
 
-Use the code from the lecture to create the function `calculateTrajectory`. Most of the code is provided, and minimal
-changes are required.
+Use the code from the lecture to create the function `calculateTrajectory`. Most of the code is provided; minimal changes are required.
 
 **Requirements**:
 
 - **Inputs**:
     - `v0`: Initial velocity in m/s (scalar)
     - `angle`: Launch angle in degrees (scalar)
-    - `g`: Gravitational acceleration in m/s² (scalar)
     - `y0`: Initial height in meters (scalar)
+    - `g`: Gravitational acceleration in m/s² (scalar)
     - `numValues`: Number of time intervals (scalar)
 
 - **Outputs**:
@@ -48,11 +47,11 @@ changes are required.
 **Instructions**:
 
 Write a MATLAB function named `calculateTrajectory` that takes the initial velocity (`v0`), launch angle (`angle`),
-gravitational acceleration (`g`), initial height (`y0`), and the number of time intervals (`numValues`) as inputs. The function should return
+initial height (`y0`), gravitational acceleration (`g`), and the number of time intervals (`numValues`) as inputs. The function should return
 the horizontal positions (`x`), vertical positions (`y`), and the time array (`time`) corresponding to the projectile's
 motion.
 
-Helper Equations:
+Helper equations:
 $$ \text{total\_time} = \frac{v_y + \sqrt{v_y^2 + 2 \cdot g \cdot y_0}}{g} $$
 $$ y = y_0 + v_y \cdot t - \frac{1}{2} \cdot g \cdot t^2 $$
 
@@ -78,7 +77,7 @@ The function should test angles between 0 and 90 degrees at 1-degree increments 
 the maximum range using the provided projectile motion equations. For each angle, calculate the range of the
 projectile, and track the angle that results in the maximum range.
 
-Helper Equation:
+Helper equation:
 $$ \text{range} = \frac{v_0 \cdot \cos(\theta)}{\text{gravity}} \cdot \left( v_0 \cdot \sin(\theta) + \sqrt{(v_0 \cdot \sin(\theta))^2 + 2 \cdot \text{gravity} \cdot y_0} \right) $$
 
 ### Script: `projectileComparison.m`
@@ -151,6 +150,7 @@ You can test your functionality running the following test files:
 * `testCalculateTrajectory.m` tests `calculateTrajectory()`
 * `testGetOptimalTrajectory.m` tests `getOptimalTrajectory()`
 * `testProjectileComparisonAssignment.m` is an integration test, it tests that the scripts function together properly.
+  * Note that there is another test `testProjectileComparison.m` which is used by this test, you do not need to run this test, if you do, it will fail but this is normal.
 
 ### Deliverables
 
@@ -293,7 +293,7 @@ This function adds a new item to the inventory file.
     - `ingredient`: The name of the ingredient (string).
     - `qty`: The quantity of the item (integer).
 
-- **Output**: None. This function will append the new item to the inventory CSV file.
+- **Output**: None. This function will append the new item to the inventory CSV file. If the stock file doesn't exist, your function shall create the file.
 
 - **Instructions**: Write a function that opens the CSV file and appends the new row containing the `upc`, `ingredient`,
   and `qty`. If the file does not exist, it should create a new one with the appropriate headers.
@@ -412,9 +412,9 @@ upc,ingredient,qty
 
 ## Definition of Done
 
-Your Week4 folder shall contain **at minimum**, the following files:
+Your Week04 folder shall contain **at minimum**, the following files:
 
-* Week4/
+* Week04/
   * addItemToStock.m
   * calculateTrajectory.m
   * gearRatioCalc.m
